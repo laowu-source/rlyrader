@@ -327,9 +327,15 @@ body.hide-mode #map3d-overlay {
   visibility: hidden;
   pointer-events: none;
 }
+html:has(body.hide-mode),
 body.hide-mode,
 body.hide-mode .stage {
-  background: #000;
+  background: #000000;
+}
+body.hide-mode .mini-radar {
+  background: #000000;
+  border: 0;
+  box-shadow: none;
 }
 body.hide-mode #hide-mode {
   display: inline-flex;
