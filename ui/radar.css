@@ -110,7 +110,7 @@ body.view-3d #map { visibility: hidden; pointer-events: none; }
   background: var(--chip-on); color: var(--fg);
 }
 .feat .hint {
-  margin: 4px 2px 0; color: var(--muted); font-size: 12px;
+  margin: 4px 2px 0; color: var(--muted); font-size: 12px; line-height: 1.4;
 }
 .pill {
   display: inline-flex;
