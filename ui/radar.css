@@ -297,19 +297,23 @@ body.feat-open .hud-right { z-index: 6; }
   width: var(--mini-size, 196px);
   height: var(--mini-size, 196px);
   border-radius: 50%;
-  z-index: 4;
+  z-index: 20;
   pointer-events: none;
   background: #000000;
   overflow: hidden;
   border: 0;
   box-shadow: none;
+  isolation: isolate;
+}
+body.view-3d .mini-radar {
+  background: #000000;
 }
 .mini-radar[hidden] { display: none !important; }
 #hide-mode {
   position: fixed;
   left: 16px;
   top: calc(72px + var(--mini-size, 196px) + 10px);
-  z-index: 6;
+  z-index: 21;
   display: none;
 }
 body.mini-on #hide-mode { display: inline-flex; }
