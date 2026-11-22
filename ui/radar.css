@@ -321,12 +321,25 @@ body.hide-mode .hud-right,
 body.hide-mode .list,
 body.hide-mode .note,
 body.hide-mode .zoom,
-body.hide-mode #map,
-body.hide-mode #map3d,
-body.hide-mode #map3d-overlay {
+body.combat-mode .hud-left,
+body.combat-mode .hud-center,
+body.combat-mode .hud-right,
+body.combat-mode .list,
+body.combat-mode .note,
+body.combat-mode .zoom,
+body.combat-mode .feat,
+body.combat-mode .menu-wrap {
   visibility: hidden;
   pointer-events: none;
 }
+#combat-exit {
+  display: none;
+  position: fixed;
+  right: 16px;
+  top: 16px;
+  z-index: 8;
+}
+body.combat-mode #combat-exit { display: inline-flex; }
 html:has(body.hide-mode),
 body.hide-mode,
 body.hide-mode .stage {
