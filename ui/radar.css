@@ -323,6 +323,13 @@ body.hide-mode .hud-right,
 body.hide-mode .list,
 body.hide-mode .note,
 body.hide-mode .zoom,
+body.hide-mode .feat,
+body.hide-mode .menu-wrap,
+body.hide-mode #map,
+body.hide-mode #map3d,
+body.hide-mode #map3d-hud,
+body.hide-mode #map3d-overlay,
+body.hide-mode #combat-exit,
 body.combat-mode .hud-left,
 body.combat-mode .hud-center,
 body.combat-mode .hud-right,
@@ -353,10 +360,17 @@ body.combat-mode .mini-radar {
   border: 0;
   box-shadow: none;
 }
+body.hide-mode .mini-radar {
+  left: 8px;
+  top: 8px;
+}
 body.hide-mode #hide-mode {
   display: inline-flex;
+  left: 8px;
+  top: calc(8px + var(--mini-size, 196px) + 4px);
   background: #fff;
   color: #3d4a5c;
+  margin: 0;
 }
 .list {
   position: fixed; left: 16px; top: 72px; width: 260px; max-height: calc(100% - 100px);
